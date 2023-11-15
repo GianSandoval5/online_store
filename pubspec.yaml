@@ -1,0 +1,54 @@
+name: online_store
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/fonts/
+    - assets/icons/
+    - assets/gif/
+
+  # fuentes de texto:
+  fonts:
+    - family: UB
+      fonts:
+        - asset: assets/fonts/Urbanist-Bold.ttf
+    - family: UR
+      fonts:
+        - asset: assets/fonts/Urbanist-Regular.ttf
+    - family: UEB
+      fonts:
+        - asset: assets/fonts/Urbanist-ExtraBold.ttf
+    - family: CB
+      fonts:
+        - asset: assets/fonts/BR-Cobane-Bold.otf
+    - family: CM
+      fonts:
+        - asset: assets/fonts/BR-Cobane-Medium.otf
+    - family: CS
+      fonts:
+        - asset: assets/fonts/BR-Cobane-SemiBold.otf
