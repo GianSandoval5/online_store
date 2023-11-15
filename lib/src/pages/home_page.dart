@@ -226,10 +226,13 @@ class _HomePageState extends State<HomePage> {
                                     ],
                                   ),
                                 ),
-                                Image.asset(
-                                  imagenes[index],
-                                  fit: BoxFit.cover,
-                                  height: 180,
+                                Hero(
+                                  tag: imagenes[index],
+                                  child: Image.asset(
+                                    imagenes[index],
+                                    fit: BoxFit.cover,
+                                    height: 180,
+                                  ),
                                 ),
                                 Text(
                                   marca[index],

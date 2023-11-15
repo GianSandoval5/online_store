@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:online_store/src/utils/colors/app_colors.dart';
 
@@ -52,9 +51,12 @@ class _DetailPageState extends State<DetailPage> {
             ),
           ),
           const SizedBox(height: 20),
-          Image.asset(
-            widget.image,
-            height: 300,
+          Hero(
+            tag: widget.image,
+            child: Image.asset(
+              widget.image,
+              height: 300,
+            ),
           ),
           Expanded(
             child: Container(
